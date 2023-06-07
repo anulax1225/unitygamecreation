@@ -28,6 +28,7 @@ public static class Noise
                 float sampleY = y / scale;
                 //Calculating perlin noise with Math 
                 float perlinValue = Mathf.PerlinNoise(sampleX, sampleY);
+                Debug.Log("perlin : " + perlinValue);
                 noiseMap[x,y] = perlinValue;
             }
         }
