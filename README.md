@@ -2,7 +2,7 @@
 
 ## But
 Le but de ce projet est de créer un generateur procédural d'environnnement<br>
-virtuel. Qui servira à la generation de terrain en 2D.
+virtuel. Qui servira à la generation de terrain en 2D. Les testes actuelle vise à découvrir la generation procedural de terrain afin de pouvoir l'implémenté dans de plus gros projet plustard. 
 
 ## Installation
 
@@ -43,7 +43,7 @@ Donc j'ai choisi ces paramètres:
     <img src="./readmeimg/param_couleur_map.png" width="25%" height="25%">
 </div>
 <br>
-Et voilà le résultat pour la même carte que au dessus :
+Et voilà le résultat pour la même carte que au dessus qui pourrait presque faire penser à une planet vue du dessus:
 <div align="center">
     <img src="./readmeimg/colour_map.png" width="25%" height="25%">
 </div>
