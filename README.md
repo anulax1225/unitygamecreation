@@ -27,17 +27,17 @@ particulier, le bruit de perlin. Il s'agit d'un bruit comme le bruit blanc qui f
 Un exemple :
 <div align="center">
     <img src="./readmeimg/perlin_noise_map.png" width="100" height="100">
-<div>
+</div>
 <br>
 Puis l'on par du principe que sur le plan en deux dimension plus un point est foncé plus il est hauteur sur la carte<br>
 donc on peux créer une variation des couleurs en fonction de la hauteur du terrain. La hauteur du terrain à été normalizé à une valeur entre 0-1.<br>
 Donc j'ai choisi ces paramètres:
 <div align="center">
     <img src="./readmeimg/param_couleur_map.png" width="25%" height="25%">
-<div>
+</div>
 <br>
 Et voilà le résultat pour la même carte que au dessus :
 <div align="center">
     <img src="./readmeimg/colour_map.png" width="100" height="100">
-<div>
+</div>
 <br>
