@@ -29,7 +29,7 @@ Puis ouvrez le unity hub et ouvré le dossier depuis celui-ci.
 ### Le bruit de perlin
 ---
 Se projet est principalement basé sur un type de bruit bien<br>
-particulier, le bruit de perlin. Il s'agit d'un bruit comme le bruit blanc sauf que la ou le bruit blanc prend une valeur au hazard pour chaque pixel, le bruit de perlin lui est un bruit coérent et qui est soumis à des changements graduelle. Une coupe de se sound forme des image qui on des patterns bien précise mais qui ne se répaît jamais.<br>
+particulier, le bruit de perlin. Il s'agit d'un bruit comme le bruit blanc sauf que la ou le bruit blanc prend une valeur au hazard pour chaque pixel, le bruit de perlin lui est un bruit coérent, qui est soumis à des changements graduelle. Une coupe de se sound forme des image qui on des patterns bien précise mais qui ne se répaît jamais.<br>
 Un exemple :
 <div align="center">
     <img src="./readmeimg/perlin_noise_map.png" width="25%" height="25%">
