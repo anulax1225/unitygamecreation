@@ -25,19 +25,19 @@ Puis ouvrez le unity hub et ouvré le dossier depuis celui-ci.
 Se projet est principalement basé sur un type de bruit bien<br>
 particulier, le bruit de perlin. Il s'agit d'un bruit comme le bruit blanc qui forme des image de bruit qui on des patterns bien précise mais qui ne se répaît jamais.<br>
 Un exemple :
-<div>
+<div align="center">
     <img src="./readmeimg/perlin_noise_map.png" width="100" height="100">
 <div>
 <br>
 Puis l'on par du principe que sur le plan en deux dimension plus un point est foncé plus il est hauteur sur la carte<br>
 donc on peux créer une variation des couleurs en fonction de la hauteur du terrain. La hauteur du terrain à été normalizé à une valeur entre 0-1.<br>
 Donc j'ai choisi ces paramètres:
-<div>
-    <img src="./readmeimg/param_couleur_map.png" width="10%" height="10%">
+<div align="center">
+    <img src="./readmeimg/param_couleur_map.png" width="25%" height="25%">
 <div>
 <br>
 Et voilà le résultat pour la même carte que au dessus :
-<div>
-    <img src="./readmeimg/coleur_map.png" width="100" height="100">
+<div align="center">
+    <img src="./readmeimg/colour_map.png" width="100" height="100">
 <div>
 <br>
