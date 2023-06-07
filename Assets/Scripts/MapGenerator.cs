@@ -27,43 +27,27 @@ public class MapGenerator : MonoBehaviour
 
 
     //Calls the perlin noise map function and passes 
-    //the returned value to the display function.
+    //the returned value to the display function with the chosen drawMode.
     public void GenerateMap()
     {
         float[,] noiseMap = Noise.GenerateNoiseMap(mapWidth, mapHeight, seed, noiseScale, octaves, persistance, lacunarity, offset);
-
-        Color[] coulourMap = new Color[mapWidth * mapHeight];
-        for (int y = 0; y < mapHeight; y++)
-        {
-            for (int x = 0; x < mapWidth; x++)
-            {
-                float currentHeight = noiseMap[x, y];
-                for(int i = 0; i < regions.length; i++)
-                {
-                    if (currentHeight <= regions[i].height)
-                    {
-                        coulourMap[y * mapWidth + x] = regions[i].colour;
-                        break;
-                    }
-                }
-            }
-        }
         MainDisplay display = FindObjectOfType<MainDisplay>();
 
-        //Choosing with map to draw.
-        if (drawMode = DrawMode.NoiseMap)
+        //Choosing witch map to draw.
+        if (drawMode == DrawMode.NoiseMap)
         {
-            display.DrawNoiseMap(noiseMap);
+            display.DrawTexture(TextureGenerator.TextureFromNoiseMap(noiseMap));
         }
         else if (drawMode == DrawMode.ColourMap)
         {
-
+            display.DrawTexture(TextureGenerator.TextureFromColourMap(noiseMap, regions, mapWidth, mapHeight));
         }
         
     }
 
     //This function will be called every time a change to parametres is made.
-    void OnValidation()
+    //And it verify's the user inputs
+    void OnValidate()
     {
         if (mapWidth < 1)
         {
@@ -84,6 +68,7 @@ public class MapGenerator : MonoBehaviour
     }
 }
 
+//
 [System.Serializable]
 public struct TerrainType
 {
