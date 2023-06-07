@@ -25,5 +25,7 @@ Puis ouvrez le unity hub et ouvré le dossier depuis celui-ci.
 Se projet est principalement basé sur un type de bruit bien<br>
 particulier, le bruit de perlin. Il s'agit d'un bruit comme le bruit blanc qui forme des image de bruit qui on des patterns bien précise mais qui ne se répaît jamais.
 Un exemple :
-<img src="./readmeimg/perlin_noise_map.png" width="300" height="300" style="margin:auto">
+<div>
+    <img src="./readmeimg/perlin_noise_map.png" width="300" height="300" style="margin:auto">
+<div>
 
