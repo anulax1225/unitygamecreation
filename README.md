@@ -22,15 +22,17 @@ Pour installer le repo tapez les commandes suivante dans git bash :
 Puis ouvrez le unity hub et ouvré le dossier depuis celui-ci.
 
 ## Fonctionnement
+### Le bruit de perlin
 Se projet est principalement basé sur un type de bruit bien<br>
 particulier, le bruit de perlin. Il s'agit d'un bruit comme le bruit blanc qui forme des image de bruit qui on des patterns bien précise mais qui ne se répaît jamais.<br>
 Un exemple :
 <div align="center">
-    <img src="./readmeimg/perlin_noise_map.png" width="100" height="100">
+    <img src="./readmeimg/perlin_noise_map.png" width="25%" height="25%">
 </div>
 <br>
 Puis l'on par du principe que sur le plan en deux dimension plus un point est foncé plus il est hauteur sur la carte<br>
 donc on peux créer une variation des couleurs en fonction de la hauteur du terrain. La hauteur du terrain à été normalizé à une valeur entre 0-1.<br>
+Pour le représenté à C# j'ai décidé d'utilisé un struct de type de terrain puis dans faire un table. 
 Donc j'ai choisi ces paramètres:
 <div align="center">
     <img src="./readmeimg/param_couleur_map.png" width="25%" height="25%">
@@ -38,6 +40,20 @@ Donc j'ai choisi ces paramètres:
 <br>
 Et voilà le résultat pour la même carte que au dessus :
 <div align="center">
-    <img src="./readmeimg/colour_map.png" width="100" height="100">
+    <img src="./readmeimg/colour_map.png" width="25%" height="25%">
 </div>
 <br>
+Il y a tout un tas d'autre paramètres avec les quels joué pour obtenir des formes et des terrains différentes. 
+
+### Les paramètres
+* Draw Mode:
+* Map Width:
+* Map Height:
+* Noise Scale:
+* Persistance:
+* Octaves:
+* Lacunarity:
+* Seed:
+* Offset: 
+* Regions:
+
