@@ -14,7 +14,7 @@ car il  contient un runtime C# et les librérie neccessaire à l'utilisation de 
 
 ### Commandes
 ---
-Pour installer le repo tapez les commandes suivante dans git bash :
+Pour installer le repo tapez les commandes suivante dans git bash depuis le dossier ou sera stocké l'application :
 ```bash 
     mkdir projetTropCool
     cd projectTropCool
@@ -29,7 +29,7 @@ Puis ouvrez le unity hub et ouvré le dossier depuis celui-ci.
 ### Le bruit de perlin
 ---
 Se projet est principalement basé sur un type de bruit bien<br>
-particulier, le bruit de perlin. Il s'agit d'un bruit comme le bruit blanc qui forme des image de bruit qui on des patterns bien précise mais qui ne se répaît jamais.<br>
+particulier, le bruit de perlin. Il s'agit d'un bruit comme le bruit blanc sauf que la ou le bruit blanc prend une valeur au hazard pour chaque pixel, le bruit de perlin lui est un bruit coérent et qui est soumis à des changements graduelle. Une coupe de se sound forme des image qui on des patterns bien précise mais qui ne se répaît jamais.<br>
 Un exemple :
 <div align="center">
     <img src="./readmeimg/perlin_noise_map.png" width="25%" height="25%">
@@ -50,16 +50,16 @@ Et voilà le résultat pour la même carte que au dessus qui pourrait presque fa
 <br>
 Il y a tout un tas d'autre paramètres avec les quels joué pour obtenir des formes et des terrains différentes. 
 
-### Les paramètres
+### Les paramètres du bruit de perlin
 ---
-* Draw Mode:
-* Map Width:
-* Map Height:
-* Noise Scale:
-* Persistance:
-* Octaves:
-* Lacunarity:
-* Seed:
-* Offset: 
-* Regions:
+* Draw Mode: definie le type de carte que l'on observe (couleur || BW).
+* Map Width: definie la largeur de la carte.
+* Map Height: definie la longueur de la carte.
+* Noise Scale: definie l'échelle de la carte.
+* Octaves: indique le nombre de de mesure de bruite cummulé sont utilisé.
+* Lacunarity: definie l'augmentation de la fréquance des octaves.
+* Persistance: definie l'augmentation de l'amplitude des octaves.
+* Seed: est un nombre aléatoire permettent de nouveau terrain.
+* Offset: vecteur permettant de se déplacé sur la carte.
+* Regions: definie la couleurs par rapport à la hauteur du terrains donné.  
 
