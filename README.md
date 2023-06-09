@@ -17,3 +17,5 @@ Pour accèdez à se project tapez les commandes suivantes dan git bash:
 ```
 
 ## Fonctionnement 
+Les tentacule de la pieuvre sont générer via l'interpolation de plusieur point tout au long du tentacul.
+Ceux-ci sont ensuite relié par des vecteur pour créer la forme du membre, puis il sont appliqué à l'écran d'aide d'un LineRender. Il est bon de savoir que le premier point du membre est toujour relié à l'extrémité du corp.
